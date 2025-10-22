@@ -8,15 +8,9 @@ class Veiculo:
         self.quilometragem = quilometragem
 
     def registrar_manutencao(self, tipo, custo):
-        """
-        Exibe informações sobre o custo de manutenção de um tipo de veículo.
-        """
         print(f"Manutenção do tipo {tipo} realizada. Custo: R${custo:.2f}")
 
     def exibir_informacoes(self, detalhado=False):
-        """
-        Exibe as informações do veículo. Se 'detalhado' for True, exibe todos os atributos.
-        """
         if detalhado:
             print(f"Marca: {self.marca}")
             print(f"Modelo: {self.modelo}")
@@ -37,17 +31,11 @@ class CarroPasseio(Veiculo):
         self.tipo_combustivel = tipo_combustivel
 
     def calcular_depreciacao(self, anos_uso, taxa_extra):
-        """
-        Calcula a depreciação do carro, incluindo uma taxa extra dependendo dos anos de uso.
-        """
-        depreciacao = anos_uso * 0.15  # Exemplo de depreciação base de 15% ao ano
+        depreciacao = anos_uso * 0.15
         depreciacao_total = depreciacao + (taxa_extra * anos_uso)
         return depreciacao_total
 
     def exibir_informacoes(self, detalhado=False):
-        """
-        Sobrescreve o método da Superclasse, incluindo os atributos específicos de CarroPasseio.
-        """
         super().exibir_informacoes(detalhado)
         if detalhado:
             print(f"Número de Portas: {self.numero_portas}")
@@ -61,15 +49,9 @@ class CaminhaoCarga(Veiculo):
         self.eixos = eixos
 
     def registrar_vistoria(self, motivo, multa=0):
-        """
-        Exibe informações sobre a vistoria do caminhão, incluindo o motivo e a multa.
-        """
         print(f"Vistoria realizada. Motivo: {motivo}. Multa: R${multa:.2f}")
 
     def exibir_informacoes(self, detalhado=False):
-        """
-        Sobrescreve o método da Superclasse, incluindo os atributos específicos de CaminhaoCarga.
-        """
         super().exibir_informacoes(detalhado)
         if detalhado:
             print(f"Capacidade de Carga: {self.capacidade_toneladas} toneladas")
