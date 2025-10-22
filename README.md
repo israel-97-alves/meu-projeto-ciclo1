@@ -1,10 +1,14 @@
-# meu-projeto-ciclo1
-Explicação do Código:
+# 🚗 Sistema de Gerenciamento de Frota
 
-Classe Veiculo: A superclasse que contém os atributos e métodos básicos de qualquer veículo.
+Este projeto é um sistema simples de gerenciamento de frota de veículos, desenvolvido em **Python**, que utiliza os conceitos de **Programação Orientada a Objetos (POO)**: **Herança**, **Polimorfismo** e **Encapsulamento**.
 
-Classe CarroPasseio: Herda de Veiculo, adiciona métodos para cálculo de depreciação e sobrescreve exibir_informacoes.
+---
 
-Classe CaminhaoCarga: Herda de Veiculo, adiciona métodos para registrar vistoria e sobrescreve exibir_informacoes.
+## 🎯 Objetivo
 
-Testes: A criação de objetos carro e caminhao para testar as funcionalidades de manutenção, exibição de informações e cálculos específicos.
+Gerenciar diferentes tipos de veículos (Carros de Passeio e Caminhões de Carga) e suas manutenções, com estrutura orientada a objetos.
+
+---
+
+## 🧱 Estrutura do Projeto
+
